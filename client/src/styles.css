@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.App {
+  text-align: center;
+}
+.container{
+  width: 100vw;
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+.container::-webkit-scrollbar {
+   display: none;  /* Safari and Chrome browsers */
+}
+
+.container {
+   -ms-overflow-style: none; /* IE and Edge */
+   scrollbar-width: none;  /* mozilla */
+}
+
+.image-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px; /* Adjust the gap between images as needed */
+}
+
+.image-grid-item {
+  flex: 0 0 calc(25% - 16px); /* Adjust the width of each item based on the desired number of columns and gap */
+  margin-bottom: 16px;
+}
+
+.image-grid-item img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+

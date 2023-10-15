@@ -1,0 +1,61 @@
+/* Style your components */
+.Main_section{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.Main_section-mid{
+    width: 100%;
+    height: 80vh;   /*vh make the height responsive*/
+    position: relative;
+}
+/* to make the image responsive or to remove down bar in the window*/
+img{
+    width: 100%;
+    height: 100%; }
+.Main_sectiontext{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;  /*make the width of the text to 100% */
+}
+.Main_sectiontext h1{
+    font-size: 3rem;
+    font-weight: 800;
+    background: white;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.Main_sectiontext p{
+    font-size: 1.3rem;
+    color: white;
+    padding: 0.5rem 0 2rem 0;
+}
+.Main_sectiontext .show{
+    text-decoration: none;
+    background: white;
+    padding: 1rem 2rem;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: black;
+}
+@media screen and (max-width:650px) {
+    .Main_sectiontext h1{
+        padding: 10px 20px;
+    }
+    .Main_sectiontext p{
+        font-size: 1.1rem;
+        padding: 0 0 2rem 0;
+    }
+    .Main_sectiontext .show{
+        padding: 0.6rem 1.1rem;
+        border-radius: 6px;
+        font-size: 1rem;
+        background-color: red;
+    }
+}
+
+
